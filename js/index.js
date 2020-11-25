@@ -25,4 +25,10 @@ function calculates() {
   subAB.value = a - b;
   subBA.value = b - a;
   mulAB.value = a * b;
+  divAB.value = formatNumber(a / b);
+  divBA.value = formatNumber(b / a);
+
+  function formatNumber(number) {
+    return new Intl.NumberFormat('pt-BR').format(number.toFixed(2));
+  }
 }
