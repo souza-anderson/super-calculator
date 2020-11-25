@@ -25,10 +25,44 @@ function calculates() {
   subAB.value = a - b;
   subBA.value = b - a;
   mulAB.value = a * b;
-  divAB.value = formatNumber(a / b);
-  divBA.value = formatNumber(b / a);
+  divAB.value = division(a, b);
+  divBA.value = division(b, a);
+  squareA.value = a ** 2;
+  squareB.value = b ** 2;
+  divisorsA.value = divisors(a);
+  divisorsB.value = divisors(b);
+  factorialA.value = factorial(a);
+  factorialB.value = factorial(b);
 
   function formatNumber(number) {
     return new Intl.NumberFormat('pt-BR').format(number.toFixed(2));
+  }
+
+  function division(a, b) {
+    if (b === 0) {
+      return 'Divisão por 0';
+    } else {
+      return formatNumber(a / b);
+    }
+  }
+
+  function divisors(number) {
+    var result = [];
+
+    for (var i = 1; i <= number; i++) {
+      if (number % i === 0) {
+        result.push(i);
+      }
+    }
+
+    return result.join(', ') + ' (' + result.length + ')';
+  }
+
+  function factorial(number) {
+    if (number === 0 || number === 1) {
+      return 1;
+    } else {
+      return number * factorial(number - 1);
+    }
   }
 }
