@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- Compiled and minified CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Trabalho Prático - Super Calculadora</title>
+  </head>
+  <body>
+    <div class="content">
+      <h1>Super Calculadora</h1>
+      <form class="col s12">
+        <div class="row">
+          <div class="input-field col s6">
+            <label for="first_number">Primeiro número (a):</label>
+            <input
+              type="number"
+              name="first_number"
+              id="first_number"
+              value="0"
+            />
+          </div>
+
+          <div class="input-field col s6">
+            <label for="second_number">Segundo número (b):</label>
+            <input
+              type="number"
+              name="second_number"
+              id="second_number"
+              value="0"
+            />
+          </div>
+        </div>
+
+        <h4>Cálculos</h4>
+        <div class="row">
+          <div class="input-field col s4">
+            <label for="sum_a_b">Soma (a + b):</label>
+            <input type="text" id="sum_a_b" value="0" readonly />
+          </div>
+
+          <div class="input-field col s4">
+            <label for="sub_a_b">Subtração (a - b):</label>
+            <input type="text" id="sub_a_b" value="0" readonly />
+          </div>
+
+          <div class="input-field col s4">
+            <label for="sub_b_a">Subtração (b - a):</label>
+            <input type="text" id="sub_b_a" value="0" readonly />
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="input-field col s4">
+            <label for="mul_a_b">Multiplicação (a * b):</label>
+            <input type="text" id="mul_a_b" value="0" readonly />
+          </div>
+
+          <div class="input-field col s4">
+            <label for="div_a_b">Divisão (a / b):</label>
+            <input type="text" id="div_a_b" value="0" readonly />
+          </div>
+
+          <div class="input-field col s4">
+            <label for="div_b_a">Divisão (b / a):</label>
+            <input type="text" id="div_b_a" value="0" readonly />
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="input-field col s4">
+            <label for="quadrado_a">Quadrado de a (a²):</label>
+            <input type="text" id="quadrado_a" value="0" readonly />
+          </div>
+
+          <div class="input-field col s4">
+            <label for="quadrado_b">Quadrado de b (b²):</label>
+            <input type="text" id="quadrado_b" value="0" readonly />
+          </div>
+
+          <div class="input-field col s4">
+            <label for="divisores_a">Divisores inteiros de a:</label>
+            <input type="text" id="divisores_a" value="0" readonly />
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="input-field col s4">
+            <label for="divisores_b">Divisores inteiros de b:</label>
+            <input type="text" id="divisores_b" value="0" readonly />
+          </div>
+
+          <div class="input-field col s4">
+            <label for="factorial_a">Fatorial de a (a!):</label>
+            <input type="text" id="factorial_a" value="0" readonly />
+          </div>
+
+          <div class="input-field col s4">
+            <label for="factorial_b">Fatorial de b (b!):</label>
+            <input type="text" id="factorial_b" value="0" readonly />
+          </div>
+        </div>
+      </form>
+    </div>
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script defer src="./js/index.js"></script>
+  </body>
+</html>
